@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Events</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <script type="text/javascript"> 
+    function change(id,newClass)
+{
+ if (
+	 
+ document.getElementById(id).className=="hidden")
+ {
+	 
+ document.getElementById(id).className="block";
+ }else if (
+	 
+ document.getElementById(id).className=="block")
+ {
+	 
+ document.getElementById(id).className="hidden";
+ }
+ else if (id)
+ {
+ id.className=newClass;
+ }
+ else
+ {
+ alert('Error: the id \''+id+'\' was not found or has not yet been imported to the DOM.\n\nNew class intended: '+newClass);
+ }
+}
+    </script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      /* Override some defaults */
+      html, body {
+        background-color: #eee;
+      }
+      body {
+        padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
+      }
+      .container > footer p {
+        text-align: center; /* center align it with the container */
+      }
+      .container {
+        width: 820px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
+      }
+
+      /* The white background content wrapper */
+      .content {
+        background-color: #fff;
+        padding: 20px;
+        margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+        -webkit-border-radius: 0 0 6px 6px;
+           -moz-border-radius: 0 0 6px 6px;
+                border-radius: 0 0 6px 6px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+                box-shadow: 0 1px 2px rgba(0,0,0,.15);
+      }
+
+      /* Page header tweaks */
+      .page-header {
+        background-color: #f5f5f5;
+        padding: 20px 20px 10px;
+        margin: -20px -20px 20px;
+      }
+
+      /* Styles you shouldn't keep as they are for displaying this base example only */
+      .content .span10,
+      .content .span4 {
+        min-height: 500px;
+      }
+      /* Give a quick and non-cross-browser friendly divider */
+      .content .span4 {
+        margin-left: 0;
+        padding-left: 19px;
+        border-left: 1px solid #eee;
+      }
+
+      .topbar .btn {
+        border: 0;
+      }
+
+    </style>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="index.html">IEEE UWaterloo Student Branch</a>
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Sponsors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        <div class="page-header">
+          <h1>Events <small>Student branch past and planned events</small></h1>
+        </div>
+        <div class="row">
+          <div class="span10">
+            <h2>Upcoming Events</h2><br>
+
+            <h3>Beginning of Term General Meeting</h3>
+			<img src="img/e5.jpg" width="537" height="295" alt="Engineering 5">
+			<h5> Where: Engineering 5 Room 2004 </h5>
+            <h5> When: Tuesday September 27th, at 5:30pm </h5>
+            <p> Come on out to the Beginning of Term general meeting. Learn about IEEE and about the IEEE Student Branch here at the University of Waterloo. Find out what exciting events we have planned, and how you can be a part of them. Sign up for one of our design teams, and learn how you can volunteer to take a leadership role within the branch. Free food will be provided.</p>
+          </div>
+          <div class="span4">
+            <h3>More Upcoming Events</h3>
+            <h6> Click on the event name for more information </h6><br>
+
+			<!-- I want to make it so that when you click on the title of the event, the information pops out, but otherwise it's hidden -->
+            <div onclick="change('event1','block');">
+
+           <a> <h5 class="eventlist"> International IEEE Xtreme Programming Competition 5.0 </h5></a>
+            </div>
+            
+            <div id="event1" class="hidden">
+            <p> When: October 22nd</p>
+            <p> What: Think you're a good programmer? Like challenges? Don't like sleep? Sign up with up to two other students as a team in the International IEEE Xtreme Programming Competition which is a 24 hour long programming competition. Prizes for the top international teams include trips, netbooks, and more. Regional winners also receive prizes from IEEE.</p>
+            </div><br>
+<br>
+
+            
+             <div onclick="change('event2','block');">
+
+           <a> <h5 class="eventlist"> Student Branch Robotics Design Competition and Workshops </h5></a>
+            </div>
+            
+            <div id="event2" class="hidden">
+            <p> When: October - November</p>
+            <p> What: Ever wanted to learn about electronics, microcontrollers, or robots? Want to get hands on skills using Arduinos and coding in C? Want to compete against other students' robots at the end of the month? This is the event for you.
+
+Don't worry if you've never worked with electronics or robots before, we take you through it step by step with weekly workshops teaching you the hands on skills you'll need to build a robot as per the design competition.</p>
+            </div><br>
+
+            <br>
+
+            <div onclick="change('event3','block');">
+
+           <a> <h5 class="eventlist"> IEEE Xplore Tips n Tricks Training</h5></a>
+            </div>
+            
+            <div id="event3" class="hidden">
+            <p> Where: Davis Center Library Room 1568</p>
+
+			<p>When: October 11th, 11:30am-12:30pm</p>
+            <p> What: A fast paced 60 minute session about using the IEEE Xplore website. Learn how to use the website to find jobs, technical papers, and more. Prizes and food provided.</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; University of Waterloo IEEE Student Branch 2011</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
