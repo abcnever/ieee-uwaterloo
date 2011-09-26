@@ -1327,12 +1327,12 @@ table .headerSortUp.purple, table .headerSortDown.purple {
 	background-color: #00F;
 	background-color: #00F;
 	background-repeat: repeat-x;
-	background-image: -khtml-gradient(linear, left top, left bottom, from(#0064cd), to(#222222));
-	background-image: -moz-linear-gradient(top, #0064cd, #222222);
-	background-image: -ms-linear-gradient(top, #049cdb, #222222);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0064cd), color-stop(100%, #222222));
-	background-image: -webkit-linear-gradient(top, #0064cd, #222222);
-	background-image: url(-o-linear-gradient(top, #0064cd, #222222));
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#333333), to(#222222));
+	background-image: -moz-linear-gradient(top, #333333, #222222);
+	background-image: -ms-linear-gradient(top, #333333, #222222);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333333), color-stop(100%, #222222));
+	background-image: -webkit-linear-gradient(top, #333333, #222222);
+	background-image: url(-o-linear-gradient(top, #333333, #222222));
 
 	background-image: url(linear-gradient(top,
 #0064cd, #222222));
