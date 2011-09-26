@@ -2370,4 +2370,5 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 .hidden {display: none;}
 .eventlist a:hover{
 	text-decoration:underline;
+	cursor:hand;
 }
