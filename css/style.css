@@ -4,3 +4,11 @@
 ul.nav {
 	float:right !important;
 }
+.container > footer p {
+	/* center align it with the container */
+	text-align: center; 
+}
+.container {
+	width: 940px; 
+	/* Moved here to make our website's layout consistent*/
+}
